@@ -8,8 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <title>Hello, world!</title>
+    <script src="js/script.js"></script>
+    <title>Demo</title>
 </head>
 
 <body>
@@ -52,8 +52,11 @@
             </form>
         </div>
     </nav>
-    <h1>Hello, world!</h1>
-
+    <h1 id="show">Hello world</h1>
+    <script>
+        createParticipaint('Sayeed', 'Hasan', 0, 'sayeed@gmail.com', 'pass');
+        document.write(JSON.stringify(getParticipaints()));
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
