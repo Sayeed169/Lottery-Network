@@ -26,3 +26,21 @@ function createParticipaint(fn, ln, bal, email, pass){
 function getParticipaints(){
     return participants;
 }
+
+var ticket_list = [];
+function ticket(title, description, price, moderetor, winning_ammount, participaints){
+    this.title = title;
+    this.price = price;
+    this.description = description;
+    this.moderator = moderetor;
+    this.winning_ammount = winning_ammount;
+    this.participaints = participaints;
+}
+
+function createATicket(){
+
+}
+
+function getAllTIckets(){
+    return ticket_list;
+}
