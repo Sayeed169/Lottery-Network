@@ -1,12 +1,14 @@
 var moderators = [];
 var participants = [];
 
-function user(fname, lname, balance, email, password){
-    this.fname = fname;
-    this.lname = lname;
-    this.balance = balance;
-    this.email = email;
-    this.password = password;
+class user {
+    constructor(fname, lname, balance, email, password) {
+        this.fname = fname;
+        this.lname = lname;
+        this.balance = balance;
+        this.email = email;
+        this.password = password;
+    }
 }
 
 function createModerator(fn, ln, bal, email, pass){
@@ -28,17 +30,19 @@ function getParticipaints(){
 }
 
 var ticket_list = [];
-function ticket(title, description, price, moderetor, winning_ammount, participaints){
-    this.title = title;
-    this.price = price;
-    this.description = description;
-    this.moderator = moderetor;
-    this.winning_ammount = winning_ammount;
-    this.participaints = participaints;
+class ticket {
+    constructor(title, description, price, moderetor, winning_ammount, participaints) {
+        this.title = title;
+        this.price = price;
+        this.description = description;
+        this.moderator = moderetor;
+        this.winning_ammount = winning_ammount;
+        this.participaints = participaints;
+    }
 }
 
 function createATicket(){
-
+    
 }
 
 function getAllTIckets(){
